@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="CSS/bootstrap.min.css">
   <link rel="stylesheet" href="CSS/all.min.css">
   <link rel="stylesheet" href="CSS/animate.min.css">
+  <link rel="stylesheet" href="CSS/aos.css">
   <link rel="stylesheet" href="CSS/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -40,50 +41,64 @@
 
 <!-- start nav -->
 <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-lg sticky-top">
-    <div class="container">
-      <a class="navbar-brand" href="#">
-        <img src="imgs/logo (1).png" alt="logo" srcset="">
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="index.html">الصفحة الرئيسية</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="about.html">معلومات عنا</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              صفحات
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="#">صفحة1</a></li>
-              <li><a class="dropdown-item" href="#">صفحة2</a></li>
-              <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="#">صفحة3</a></li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" href="service.html">الخدمات</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="projects.html">المشاريع</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="gallery.html">الصالة</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="blog.html">مدونة</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">اتصل بنا</a>
-          </li>
+  <div class="container">
+
+        <a class="navbar-brand logo d-block d-md-none d-lg-block" href="#">
+          <img src="imgs/1.jpg" alt="logo" srcset="">
+        </a>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-lg-auto mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html">الصفحة الرئيسية</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">معلومات عنا</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="service.html">الخدمات</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="projects.html">المشاريع</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="gallery.html">الصالة</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="blog.html">مدونة</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">اتصل بنا</a>
+            </li>
+          </ul>
+        </div>
+     
+    
+
+    <div class="offcanvas-menu d-block d-md-none">
+      <input type="checkbox" id="toogle-menu" />
+      <label for="toogle-menu" class="toogle-open"><span></span></label>
+      <nav>
+        <div>
+          <label for="toogle-menu" class="toogle-close">
+            <span></span>
+          </label>
+        </div>
+        <ul class="list-unstyled">
+          <li><a href="index.html">الصفحةالرئيسية</a></li>
+          <li><a href="about.html">معلومات عنا</a></li>
+          <li><a href="service.html">الخدمات</a></li>
+          <li><a href="projects.html">المشاريع</a></li>
+          <li><a href="gallery.html">الصالة</a></li>
+          <li><a href="blog.html">مدونة</a></li>
+          <li><a href="#">اتصل بنا</a></li>
         </ul>
-      </div>
+      </nav>
     </div>
+
+    
+  
+  </div>
 </nav>
 <!-- end nav -->
 
@@ -106,7 +121,7 @@
 <section class="news service pt-5 pb-5">
     <div class="container">
         <div class="row g-5 g-md-4">
-            <div class="col-12 col-md-6 col-lg-4 animate__animated animate__backInDown animate__delay-0.5s">
+            <div class="col-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-duration="1000">
                 <div class="card border-0">
                     <img src="imgs/service-item-bg-1.jpg" class="card-img-top" alt="...">
                     <div class="card-body pt-4 pb-4 ps-0 pe-0 lh-lg">
@@ -116,7 +131,7 @@
                     </div>
                   </div>
             </div>
-            <div class="col-12 col-md-6 col-lg-4 animate__animated animate__backInDown animate__delay-1s">
+            <div class="col-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-duration="1500">
                 <div class="card border-0">
                     <img src="imgs/service-item-bg-2.jpg" class="card-img-top" alt="...">
                     <div class="card-body pt-4 pb-4 ps-0 pe-0 lh-lg">
@@ -126,7 +141,7 @@
                     </div>
                   </div>
             </div>
-            <div class="col-12 col-md-6 col-lg-4 animate__animated animate__backInDown animate__delay-2s">
+            <div class="col-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-duration="2000">
                 <div class="card border-0">
                     <img src="imgs/service-item-bg-1.jpg" class="card-img-top" alt="...">
                     <div class="card-body pt-4 pb-4 ps-0 pe-0 lh-lg">
@@ -146,7 +161,7 @@
     <div class="container">
       <h2 class="mb-5 section-title position-relative">ماذا عنا</h2>
       <div class="row">
-        <div class="col-12 col-md-6 col-lg-4 animate__animated animate__backInUp animate__delay-0.5s">
+        <div class="col-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-duration="1000">
             <div class="d-flex align-items-md-start align-items-center mb-4">
                 <img class="rounded-circle w-25" src="imgs/profile-img-1.jpg" alt="prof1">
                 <div class="content me-4 lh-lg">
@@ -156,7 +171,7 @@
                 </div>  
             </div>
         </div>
-        <div class="col-12 col-md-6 col-lg-4 animate__animated animate__backInUp animate__delay-1s">
+        <div class="col-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-duration="1500">
           <div class="d-flex align-items-md-start align-items-center mb-4">
             <img class="rounded-circle w-25" src="imgs/profile-img-2.jpg" alt="prof1">
             <div class="content me-4 lh-lg">
@@ -166,7 +181,7 @@
             </div>  
         </div>
         </div>
-        <div class="col-12 col-md-6 col-lg-4 animate__animated animate__backInUp animate__delay-2s">
+        <div class="col-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-duration="2000">
           <div class="d-flex align-items-md-start align-items-center mb-4">
             <img class="rounded-circle w-25" src="imgs/profile-img-3.jpg" alt="prof1">
             <div class="content me-4 lh-lg">
@@ -186,22 +201,22 @@
     <div class="container">
         <h2 class="mb-5 section-title position-relative">عملائنا</h2>
         <div class="row g-3">
-            <div class="col-12 col-sm-6 col-md-4 col-lg-2 d-flex justify-content-center animate__animated animate__backInUp animate__delay-2s">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-2 d-flex justify-content-center" data-aos="fade-left" data-aos-duration="1000">
                 <img src="imgs/client-logo-1.jpg" alt="clients" class="w-100">
             </div>
-            <div class="col-12 col-sm-6 col-md-4 col-lg-2 d-flex justify-content-center animate__animated animate__backInUp animate__delay-2s">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-2 d-flex justify-content-center" data-aos="fade-left" data-aos-duration="1500">
                 <img src="imgs/client-logo-2.jpg" alt="clients" class="w-100">
             </div>
-            <div class="col-12 col-sm-6 col-md-4 col-lg-2 d-flex justify-content-center animate__animated animate__backInUp animate__delay-2s">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-2 d-flex justify-content-center" data-aos="fade-left" data-aos-duration="2000">
                 <img src="imgs/client-logo-3.jpg" alt="clients" class="w-100">
             </div>
-            <div class="col-12 col-sm-6 col-md-4 col-lg-2 d-flex justify-content-center animate__animated animate__backInUp animate__delay-2s">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-2 d-flex justify-content-center" data-aos="fade-right" data-aos-duration="2000">
                 <img src="imgs/client-logo-4.jpg" alt="clients" class="w-100">
             </div>
-            <div class="col-12 col-sm-6 col-md-4 col-lg-2 d-flex justify-content-center animate__animated animate__backInUp animate__delay-2s">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-2 d-flex justify-content-center" data-aos="fade-right" data-aos-duration="1500">
                 <img src="imgs/client-logo-5.jpg" alt="clients" class="w-100">
             </div>
-            <div class="col-12 col-sm-6 col-md-4 col-lg-2 d-flex justify-content-center animate__animated animate__backInUp animate__delay-2s">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-2 d-flex justify-content-center" data-aos="fade-right" data-aos-duration="1000">
                 <img src="imgs/client-logo-6.jpg" alt="clients" class="w-100">
             </div>
         </div>
@@ -214,7 +229,7 @@
     <div class="container">
       <div class="row g-4 g-lg-3">
         <div class="col-12 col-md-6 col-lg-3">
-          <img class="img_logo" src="imgs/logo (1).png" alt="logo" srcset="">
+          <img class="img_logo" src="imgs/1.jpg" alt="logo" srcset="">
           <p class="pt-3">نحن مستعدون لمساعدتكم دائما</p>
           <p>وسنكون دائما عند حسن ظنكم</p>
           <span>تليفون:101001000</span>
@@ -299,6 +314,7 @@
 
     <script src="JS/bootstrap.bundle.min.js"></script>
     <script src="JS/all.min.js"></script>
+    <script src="JS/aos.js"></script>
     <script src="JS/main.js"></script>
     
   </body>

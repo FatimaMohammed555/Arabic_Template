@@ -22,4 +22,8 @@ function topFunction() {
   document.documentElement.scrollTop = 0;
 }
 
-
+AOS.init({
+  easing: 'ease-in-out-sine',
+  duration:'1000'
+  // easing:'linear'
+});

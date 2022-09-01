@@ -10,7 +10,6 @@
   <link rel="stylesheet" href="CSS/animate.min.css">
   <link rel="stylesheet" href="CSS/aos.css">
   <link rel="stylesheet" href="CSS/slicknav.min.css">
-  <link rel="stylesheet" href="CSS/responsev.css">
   <link rel="stylesheet" href="CSS/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -42,73 +41,62 @@
 
 <!-- start nav -->
 <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-lg sticky-top">
-    <div class="container">
-      <a class="navbar-brand logo" href="#">
-        <img src="imgs/logo (1).png" alt="logo" srcset="">
-      </a>
+  <div class="container">
 
-      <div class="offcanvas-menu">
-        <input type="checkbox" id="toogle-menu" />
-        <label for="toogle-menu" class="toogle-open"><span></span></label>
-        <nav>
-          <div>
-            <a href="#"> <i class="fab fa-css3-alt"></i>offcanvas </a>
-            <label for="toogle-menu" class="toogle-close">
-              <span></span>
-            </label>
-          </div>
-          <ul>
-            <li><a href="#section1">Section </a></li>
-            <li><a href="#section2">Section </a></li>
-            <li><a href="#section3">Section </a></li>
-            <li><a href="#section4">Section </a></li>
-            <li><a href="#section5">Section </a></li>
+        <a class="navbar-brand logo d-block d-md-none d-lg-block" href="#">
+          <img src="imgs/1.jpg" alt="logo" srcset="">
+        </a>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-lg-auto mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">الصفحة الرئيسية</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">معلومات عنا</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="service.html">الخدمات</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="projects.html">المشاريع</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="gallery.html">الصالة</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="blog.html">مدونة</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">اتصل بنا</a>
+            </li>
           </ul>
-        </nav>
-      </div>
-
-<!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button> -->
-      
-      <!-- <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="index.html">الصفحة الرئيسية</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="about.html">معلومات عنا</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              صفحات
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="#">صفحة1</a></li>
-              <li><a class="dropdown-item" href="#">صفحة2</a></li>
-              <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="#">صفحة3</a></li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="service.html">الخدمات</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="projects.html">المشاريع</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="gallery.html">الصالة</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="blog.html">مدونة</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">اتصل بنا</a>
-          </li>
+        </div>
+     
+    <div class="offcanvas-menu d-block d-md-none">
+      <input type="checkbox" id="toogle-menu" />
+      <label for="toogle-menu" class="toogle-open"><span></span></label>
+      <nav>
+        <div>
+          <label for="toogle-menu" class="toogle-close">
+            <span></span>
+          </label>
+        </div>
+        <ul class="list-unstyled">
+          <li><a href="index.html">الصفحةالرئيسية</a></li>
+          <li><a href="about.html">معلومات عنا</a></li>
+          <li><a href="service.html">الخدمات</a></li>
+          <li><a href="projects.html">المشاريع</a></li>
+          <li><a href="gallery.html">الصالة</a></li>
+          <li><a href="blog.html">مدونة</a></li>
+          <li><a href="#">اتصل بنا</a></li>
         </ul>
-      </div> -->
-    
+      </nav>
     </div>
+
+    
+  
+  </div>
 </nav>
 <!-- end nav -->
 
@@ -404,7 +392,7 @@
   <div class="container">
     <div class="row g-4 g-lg-3">
       <div class="col-12 col-md-6 col-lg-3">
-        <img class="img_logo" src="imgs/logo (1).png" alt="logo" srcset="">
+        <img class="img_logo" src="imgs/1.jpg" alt="logo" srcset="">
         <p class="pt-3">نحن مستعدون لمساعدتكم دائما</p>
         <p>وسنكون دائما عند حسن ظنكم</p>
         <span>تليفون:101001000</span>
@@ -493,47 +481,7 @@
   <script src="JS/jquery.min.js"></script>
   <script src="JS/jquery.slicknav.min.js"></script>
   <script src="JS/main.js"></script>
-  <script>
-     AOS.init({
-        easing: 'ease-in-out-sine',
-        duration:'1000'
-        // easing:'linear'
-      });
-
-      $(document).ready(function(){
-
-          $('.fa-bars').click(function(){
-          $('ul').toggle();
-          $(this).toggleClass('fa-xmark')
-          });
-
-          $('ul , ul>li>a').click(function(){
-          $('ul').hide();
-          $('.fa-bars').removeClass('fa-xmark')
-          // $('ul').hide().removeClass('fa-xmark').addClass('fa-bars');
-          // $(this).removeClass('fa-xmark').addClass('fa-bars');
-          // $('.fa-xmark').remove();
-          // $('.fa-bars').add();
-          
-          });
-
-      });
-
-
-// $('#menu').slicknav({
-// 	label: '',
-// });
-
-// Mobile Menu
-        
-
-// AOS.init({
-//   offset: 400, // offset (in px) from the original trigger point
-//         delay: 0, // values from 0 to 3000, with step 50ms
-//         duration: 1000 // values from 0 to 3000, with step 50ms
-//       });
-  </script>
-
+    
 </body>
 </html>
 

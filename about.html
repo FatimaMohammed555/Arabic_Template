@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="CSS/bootstrap.min.css">
   <link rel="stylesheet" href="CSS/all.min.css">
   <link rel="stylesheet" href="CSS/animate.min.css">
+  <link rel="stylesheet" href="CSS/aos.css">
   <link rel="stylesheet" href="CSS/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -40,48 +41,62 @@
 <!-- start nav -->
 <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-lg sticky-top">
   <div class="container">
-    <a class="navbar-brand" href="#">
-      <img src="imgs/logo (1).png" alt="logo" srcset="">
-    </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link" aria-current="page" href="index.html">الصفحة الرئيسية</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active" href="about.html">معلومات عنا</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            صفحات
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="#">صفحة1</a></li>
-            <li><a class="dropdown-item" href="#">صفحة2</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">صفحة3</a></li>
+
+        <a class="navbar-brand logo d-block d-md-none d-lg-block" href="#">
+          <img src="imgs/1.jpg" alt="logo" srcset="">
+        </a>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-lg-auto mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html">الصفحة الرئيسية</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="about.html">معلومات عنا</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="service.html">الخدمات</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="projects.html">المشاريع</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="gallery.html">الصالة</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="blog.html">مدونة</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">اتصل بنا</a>
+            </li>
           </ul>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="service.html">الخدمات</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="projects.html">المشاريع</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="gallery.html">الصالة</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="blog.html">مدونة</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">اتصل بنا</a>
-        </li>
-      </ul>
+        </div>
+     
+    
+
+    <div class="offcanvas-menu d-block d-md-none">
+      <input type="checkbox" id="toogle-menu" />
+      <label for="toogle-menu" class="toogle-open"><span></span></label>
+      <nav>
+        <div>
+          <label for="toogle-menu" class="toogle-close">
+            <span></span>
+          </label>
+        </div>
+        <ul class="list-unstyled">
+          <li><a href="index.html">الصفحةالرئيسية</a></li>
+          <li><a href="about.html">معلومات عنا</a></li>
+          <li><a href="service.html">الخدمات</a></li>
+          <li><a href="projects.html">المشاريع</a></li>
+          <li><a href="gallery.html">الصالة</a></li>
+          <li><a href="blog.html">مدونة</a></li>
+          <li><a href="#">اتصل بنا</a></li>
+        </ul>
+      </nav>
     </div>
+
+    
+  
   </div>
 </nav>
 <!-- end nav -->
@@ -106,7 +121,7 @@
   <div class="container">
       <h2 class="mb-5 section-title position-relative">لماذا تختارنا نحن</h2>
       <div class="row g-4">
-          <div class="col-12 col-lg-6 animate__animated animate__backInDown">
+          <div class="col-12 col-lg-6" data-aos="fade-up" data-aos-duration="1000">
                   <div class="d-sm-flex align-items-center">
                       <img src="imgs/choose-us-img-1.jpg" alt="">
                       <div class="content me-4 mt-4 mt-sm-0">
@@ -117,7 +132,7 @@
                       </div>  
                   </div>
           </div>
-          <div class="col-12 col-lg-6 animate__animated animate__backInDown">
+          <div class="col-12 col-lg-6" data-aos="fade-up" data-aos-duration="1500">
                   <div class="d-sm-flex align-items-center">
                       <img src="imgs/choose-us-img-2.jpg" alt="">
                       <div class="content me-4 mt-4 mt-sm-0">
@@ -130,7 +145,7 @@
           </div>
       </div>
       <div class="row g-4 mt-3">
-          <div class="col-12 col-lg-4">
+          <div class="col-12 col-lg-4" data-aos="fade-left" data-aos-duration="500">
                   <div class="d-flex align-items-center">
                       <i class="fa fa-heart rounded-circle p-3" aria-hidden="true"></i>
                       <div class="content me-4">
@@ -139,7 +154,7 @@
                       </div>  
                   </div>
           </div>
-          <div class="col-12 col-lg-4">
+          <div class="col-12 col-lg-4" data-aos="fade-left" data-aos-duration="1000">
                   <div class="d-flex align-items-center">
                       <i class="fa fa-heart rounded-circle p-3" aria-hidden="true"></i>
                       <div class="content me-4">
@@ -148,7 +163,7 @@
                       </div>  
                   </div>
           </div>
-          <div class="col-12 col-lg-4">
+          <div class="col-12 col-lg-4" data-aos="fade-left" data-aos-duration="1500">
                   <div class="d-flex align-items-center">
                       <i class="fa fa-heart rounded-circle p-3" aria-hidden="true"></i>
                       <div class="content me-4">
@@ -178,7 +193,7 @@
   <div class="container">
       <h2 class="mb-5 section-title position-relative">فريقنا</h2>
     <div class="row g-4">
-      <div class="col-12 col-md-6 col-lg-4 animate__animated animate__backInUp">
+      <div class="col-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-duration="1000">
         <div class="single-team text-center">
           <div class="team-image position-relative">
             <img src="imgs/team-one.jpg" alt="" class="w-100">
@@ -197,7 +212,7 @@
           <p class="text-center">مدير المشروع</p>
         </div>
       </div>
-      <div class="col-12 col-md-6 col-lg-4 animate__animated animate__backInUp">
+      <div class="col-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-duration="1500">
         <div class="single-team text-center">
           <div class="team-image position-relative">
             <img src="imgs/team-two.jpg" alt="" class="w-100">
@@ -216,7 +231,7 @@
           <p class="text-center">مهندس موقع</p>
         </div>
       </div>
-      <div class="col-12 col-md-6 col-lg-4 animate__animated animate__backInUp">
+      <div class="col-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-duration="2000">
         <div class="single-team text-center">
           <div class="team-image position-relative">
             <img src="imgs/team-three.jpg" alt="" class="w-100">
@@ -246,7 +261,7 @@
   <div class="container">
     <div class="row g-4 g-lg-3">
       <div class="col-12 col-md-6 col-lg-3">
-        <img class="img_logo" src="imgs/logo (1).png" alt="logo" srcset="">
+        <img class="img_logo" src="imgs/1.jpg" alt="logo" srcset="">
         <p class="pt-3">نحن مستعدون لمساعدتكم دائما</p>
         <p>وسنكون دائما عند حسن ظنكم</p>
         <span>تليفون:101001000</span>
@@ -328,8 +343,11 @@
   <i class="fa fa-fighter-jet" aria-hidden="true"></i>
 </a> 
 
-<script src="JS/bootstrap.bundle.min.js"></script>
-<script src="JS/all.min.js"></script>
-<script src="JS/main.js"></script>
+  <script src="JS/bootstrap.bundle.min.js"></script>
+  <script src="JS/all.min.js"></script>
+  <script src="JS/aos.js"></script>
+  <script src="JS/jquery.min.js"></script>
+  <script src="JS/jquery.slicknav.min.js"></script>
+  <script src="JS/main.js"></script>
 </body>
 </html>
